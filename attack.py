@@ -68,8 +68,7 @@ def main():
     print("Generating test trace...")
     test_trace = generate_fake_traces(1, num_samples, true_key)[0]  # Single trace
     print(test_trace)
-    
-# GHow-is-an-internship-at-IIT-Bombay-likeuess the key
+ 
     print("Running attack...")
     guessed_key = attack_phase(templates, test_trace)
     print(f"True key: {true_key}, Guessed key: {guessed_key}")
